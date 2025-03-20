@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    span {
+      border: 1px solid;
+      background-color: orange;
+      margin: 10px;
+    }
+    #span1 {
+      width: 300px;
+      height: 100px;
+    }
+    /* span을 inline에서 inline-block으로 변경 */
+    /* display를 변경하면 block요소처럼 크기를 바꿀 수 있음 */
+    #span2 {
+      display: inline-block;
+      width: 300px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span id="span1">hello</span>
+    <span id="span2">world</span>
+  </div>
+</body>
+</html>
+
+<!-- 
+span은 인라인 요소
+인라인 요소는 크기를 변경할 수 없다
+-->
+
