@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="stylesheet" href="../CSS/main3.css">
+</head>
+<body>
+  <div>
+    <h3>숙박 예약</h3>
+    <!-- 입력양식(회원가입,로그인,상품주문 등)은 form 태크 -->
+    <form action="localhost:8080">
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name">
+      <label for="checkin">체크인 날짜:</label>
+      <input type="date" id="checkin" name="checkin">
+      <label for="checkout">체크아웃 날짜:</label>
+      <input type="date" id="checkout" name="checkout">
+      <label for="roomtype">객실 유형:</label>
+      <select id="roomtype" name="roomtype">
+        <option value="single">싱글룸</option>
+        <option value="double">더블룸</option>
+        <option value="suite">스위트룸</option>
+      </select>
+      <!-- 요청사항 -->
+       <!-- 게시물,메모와 같이 내용이 길때는 textarea -->
+      <label for="request">요청 사항:</label>
+      <textarea id="request" rows="4" placeholder="요청 사항을 입력하세요." name="request"></textarea>
+      <!-- submit: 서버에 데이터를 전송하는 버튼 -->
+      <button type="submit">예약하기</button>
+    </form>
+  </div>
+</body>
+</html>

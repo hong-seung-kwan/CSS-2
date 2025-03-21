@@ -1,0 +1,12 @@
+h2 {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+  line-height: 1.5;
+  color: darkblue;
+}
