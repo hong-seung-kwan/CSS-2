@@ -1,0 +1,36 @@
+/* 전체 크기 설정 */
+body{
+  width: 600px;
+  height: 400px;
+  text-align: center;
+}
+/* header와 footer의 높이는 10% */
+header,footer {
+  /* 높이 비율 */
+  /* height는 부모를 기준으로 퍼센테이지 적용 */
+  height: 10%;
+  background-color: gray;
+}
+/* left center right를 수평 정렬 */
+/* row(수평방향)으로 정렬 */
+main {
+  height: 80%;
+  display: flex;
+  font-weight: bold;
+}
+/* left right는 20% center는 60% */
+/* main을 부모로가진 첫번째 section 태그를 선택 */
+main > section:nth-child(1) {
+  background-color: skyblue;
+  width: 20%;
+  
+}
+main > section:nth-child(2) {
+  background-color: gainsboro;
+  width: 60%;
+  
+}
+main > section:last-child {
+  background-color: red;
+  width: 20%;
+}

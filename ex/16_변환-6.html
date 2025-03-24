@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 부모가 자식요소에 의해 반이 가려지도록 설정 */
+    .parent {
+      width: 200px;
+      height: 100px;
+      background-color: gainsboro;
+      margin-bottom: 50px;
+    }
+    .child {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+    }
+    /* 원근감을 자식에 설정 */
+    /* 부모와 자식 사이에 거리 */
+    .child1 {
+      transform: perspective(500px) rotateX(45deg);
+    }
+    /* 원근감을 부모에 설정 */
+    /* 관찰자와 부조 사이의 거리 */
+    .parent2 {
+      perspective: 500px;
+    }
+    .child2 {
+      transform: rotateX(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="parent parent1">
+    <div class="child child1"></div>
+  </div>
+
+  <div class="parent parent2">
+    <div class="child child2"></div>
+  </div>
+</body>
+</html>

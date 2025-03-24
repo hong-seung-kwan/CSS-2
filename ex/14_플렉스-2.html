@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    * {
+      margin: 0;
+    }
+    /* flex 컨테이너로 설정 */
+    /* 자식요소를 특정방향으로 정렬 */
+    div {
+      display: flex;
+      margin-top: 20px;
+    }
+    p {
+      border: 1px solid;
+      width: 300px;
+      height: 100px;
+    }
+    .child1 {
+      background-color: lavender;
+    }
+    .child2 {
+      background-color: darkgray;
+    }
+    .child3 {
+      background-color: gold;
+    }
+    /* flex_direction: 정렬 방향 (row는 수평) */
+    .parent1 {
+      flex-direction: row;
+    }
+    /* column은 수작방향 */
+    .parent2 {
+      flex-direction: column;
+    }
+    /* wrap: 자식들의 전체 가로길이가 부모보다 커지면 줄바꿈 */
+    /* 기본적으로 화면크기가 달라지면 화면 크기에 맞춰 
+       자동으로 자식들의 크기가 달라진다 */
+    .parent3 {
+      /* flex-wrap: wrap; */
+    }
+  </style>
+</head>
+<body>
+  <div class="parent1">
+    <p class="child1">child1</p>
+    <p class="child2">child2</p>
+    <p class="child3">child3</p>
+  </div>
+
+  <div class="parent2">
+    <p class="child1">child1</p>
+    <p class="child2">child2</p>
+    <p class="child3">child3</p>
+  </div>
+
+  <div class="parent3">
+    <p class="child1">child1</p>
+    <p class="child2">child2</p>
+    <p class="child3">child3</p>
+    <p class="child1">child4</p>
+    <p class="child2">child5</p>
+    <p class="child3">child6</p>
+  </div>
+</body>
+</html>

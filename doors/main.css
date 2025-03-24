@@ -1,0 +1,44 @@
+/* 컨테이너 스타일 */
+.container {
+  
+  
+}
+/* doors 스타일 */
+/* flex 컨테이너로 설정 */
+/* 아이템들의 전체 너비가 부모보다 커지면 줄바꿈 */
+.doors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: orange;
+  /* 최대 너비 */
+  max-width: 660px;
+  /* 여백을 이용해서 가운데 정렬 */
+  margin: 0 auto;
+  padding: 40px 20px;
+  
+}
+/* door 스타일 */
+.door {
+  width: 80px;
+  height: 84px;
+  background-color: gray;
+  margin: 4px;
+  /* 기울임 효과 */
+  transform: skewX(-14deg);
+  /* 모서리 둥글게 */
+  border-radius: 10px;
+  border: 3px solid white;
+  /* 크기 설정 */
+  box-sizing: border-box;
+}
+
+/* 
+box-sizing: 요소의 크기를 계산하는 속성
+border-box: padding + border + content = width
+border-box는 모두 합쳐서 80px
+content-box: content = width
+content-box는 content의 너비만 80px 테두리와 여백은 별도
+
+항상 같은 크기를 유지하려면 border-box를 사용할 것
+*/

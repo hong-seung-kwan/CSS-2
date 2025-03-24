@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+    }
+    /* 부모 div와 자식div가 겹치도록 설정 */
+    .parent {
+      background-color: gainsboro;
+      margin-bottom: 50px;
+    }
+    .child {
+      background-color: skyblue;
+    }
+    /* 크기비율을 변경하는 함수 */
+    .child1 {
+      transform: scale(1.5); /* 1.5배 */
+    }
+    .child2 {
+      transform: scale(0.6); /* 0.6배 */
+    }
+    /* x축으로만 2배 */
+    .child3 {
+      transform: scaleX(2);
+    }
+  </style>
+</head>
+<body>
+  <!-- transform을 사용해서 요소들의 크기 변경하기 -->
+  <div class="parent">
+    <div class="child child1"></div>
+  </div>
+
+  <div class="parent">
+    <div class="child child2"></div>
+  </div>
+
+  <div class="parent">
+    <div class="child child3"></div>
+  </div>
+</body>
+</html>

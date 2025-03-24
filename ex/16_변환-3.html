@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      
+    }
+    .parent {
+      background-color: gainsboro;
+      margin-bottom: 50px;
+    }
+    .child {
+      background-color: skyblue;
+    }
+    /* rotate: 지정한 각도만큼 요소를 회전시키는 함수 */
+    .child1 {
+      transform: rotate(45deg); /* 시계 방향으로 45도 회전 */
+    }
+    /* x축 기준 */
+    .child2 {
+      transform: rotateX(45deg);
+    }
+    /* y축 기준 */
+    .child3 {
+      transform: rotateY(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child child1"></div>
+  </div>
+
+  <div class="parent">
+    <div class="child child2"></div>
+  </div>
+
+  <div class="parent">
+    <div class="child child3"></div>
+  </div>
+</body>
+</html>

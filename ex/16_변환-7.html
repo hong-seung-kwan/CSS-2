@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 부모가 자식요소에 의해 반이 가려지도록 설정 */
+    .parent {
+      width: 200px;
+      height: 100px;
+      background-color: gainsboro;
+      margin-bottom: 50px;
+    }
+    .child {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+    }
+    
+    /* rotateY: y축을 기준으로 180도 회전 */
+    .child1 {
+      transform: rotateY(180deg);
+    }
+    /* backface-visibility: 요소가 뒤집혔을때 화면에 표시할지 결정 */
+    /* hidden: 숨김 처리 */
+    .child2 {
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent parent1">
+    <div class="child child1"></div>
+  </div>
+
+  <div class="parent parent2">
+    <div class="child child2"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      
+    }
+    .parent {
+      background-color: gainsboro;
+      margin-bottom: 50px;
+    }
+    .child {
+      background-color: skyblue;
+    }
+    /* perspective: 거리만큼 원근감 설정 */
+    /* 멀리서 해당 요소를 바라보는 효과 */
+    /* rotate함수와 함께 사용하면 회전효과를 더 실감나게 설정할 수 있다 */
+    .child1 {
+      transform: perspective(500px) rotateX(45deg);
+    }
+    .child2 {
+      transform: perspective(500px) rotateY(45deg);
+    }
+    .child3 {
+      transform: perspective(500px) rotateX(45deg) rotateY(45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child child1"></div>
+  </div>
+
+  <div class="parent">
+    <div class="child child2"></div>
+  </div>
+
+  <div class="parent">
+    <div class="child child3"></div>
+  </div>
+</body>
+</html>

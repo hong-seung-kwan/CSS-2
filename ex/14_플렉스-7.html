@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    * {
+      margin: 0;
+    }
+    div{
+      background-color: gainsboro;
+      height: 150px;
+      margin-top: 20px;
+      display: flex;
+    }
+    p {
+      border: 1px solid;
+      width: 500px;
+      height: 100px;
+      background-color: gold;
+      font-size: 3em;
+      text-align: center;
+    }
+    /* 자식들의 너비를 1:1:2로 설정 */
+    /* 남는여백으로 1:1:2 비율로 배분 */
+    .child1 {
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .child2 {
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .child3 {
+      flex-grow: 2;
+      flex-basis: auto;
+    }
+    /* 남는 여백은 1:1:2 비율로 배분 */
+    .child4 {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .child5 {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .child6 {
+      flex-grow: 2;
+      flex-basis: 0;
+    }
+    /* 아이템의 기본크기를 100px로 설정 */
+    .child7 { 
+      flex-grow: 1;
+      flex-basis: 100px;
+    }
+    .child8 { 
+      flex-grow: 1;
+      flex-basis: 100px;
+    }
+    .child9 { 
+      flex-grow: 2;
+      flex-basis: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="child1">Good</p>
+    <p class="child2">A</p>
+    <p class="child3">Hello world</p>
+  </div>
+
+  <div>
+    <p class="child4">Good</p>
+    <p class="child5">A</p>
+    <p class="child6">Hello world</p>
+  </div>
+
+  <div>
+    <p class="child7">Good</p>
+    <p class="child8">A</p>
+    <p class="child9">Hello world</p>
+  </div>
+</body>
+</html>
+<!-- flex-basis: 남는 여백을 배분하는 기준
+
+auto 일때는 아이템의 크기를 기준으로 남는 공간을 배분
+0 일때는 flex-grow 값만으로 남는 공간을 배분
+따라서 child6은 4번과 5번의 두배가 됨
+
+
+
+-->

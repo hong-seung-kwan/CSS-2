@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    * {
+      margin: 0;
+    }
+    div{
+      background-color: gainsboro;
+      height: 300px;
+      margin-top: 20px;
+      display: flex;
+    }
+    p {
+      border: 1px solid;
+      width: 500px;
+      height: 100px;
+      background-color: gold;
+      font-size: 3em;
+      text-align: center;
+    }
+    /* 자식 요소의 비율 변경 */
+    /* flex-grow: 너비 비율. 남는 공간을 배분
+       기본값은 0으로, 남는 공간을 가지지 않음
+       숫자가 클수록 많은 공간을 차지한다
+       예: 남는 공간이 300px라면 child1은 100만큼 child2는 200만큼 
+       child3은 0을 가져감
+       남는 공간이 없으면 의미가 없음
+    */
+    .child1 {
+      flex-grow: 1;
+    }
+    .child2 {
+      flex-grow: 2;
+    }
+  </style>
+</head>
+<body>
+  <!-- flex 컨테이너로 자식요소의 비율 설정하기 -->
+   <div>
+    <p class="child1">A</p>
+    <p class="child2">B</p>
+    <p class="child3">C</p>
+   </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    * {
+      margin: 0;
+    }
+    div {
+      height: 300px;
+      margin-top: 20px;
+      background-color: gainsboro;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    p {
+      border: 1px solid;
+      width: 500px;
+      height: 100px;
+      background-color: gold;
+      font-size: 3em; /* 3배 */
+    }
+    .parent1 {     
+      /* 교차축으로 기준으로 배치 */
+      /* 현재 기준이 x축이므로 교차축은 y축 */
+      /* align-content: 교차축을 기준으로 위쪽에 배치됨 */
+      align-content: flex-start;
+    }
+    .parent2 {
+      align-content: center;
+    }
+    .parent3 {
+      align-content: flex-end;
+    }
+    /* align-content: 부모의 높이를 기준으로 배치 */
+    /* align-items: 한줄 높이를 기준으로 배치 */
+
+    /* align-items 속성은 줄바꿈이 됬을때 차이가 있음 */
+    .parent4 {
+      align-items: flex-start;
+    }
+    .parent5 {
+      align-items: center;
+    }
+    .parent6 {
+      align-items: flex-end;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- flex 컨테이너로 자식요소 정렬하기 -->
+  <div class="parent1">
+    <p>A</p>
+    <P>B</P>
+    <P>C</P>
+    <P>D</P>
+    <P>E</P>
+  </div>
+
+  <div class="parent2">
+    <p>A</p>
+    <P>B</P>
+    <P>C</P>
+    <P>D</P>
+    <P>E</P>
+  </div>
+
+  <div class="parent3">
+    <p>A</p>
+    <P>B</P>
+    <P>C</P>
+    <P>D</P>
+    <P>E</P>
+  </div>
+
+  <div class="parent4">
+    <p>A</p>
+    <P>B</P>
+    <P>C</P>
+    <P>D</P>
+    <P>E</P>
+  </div>
+
+  <div class="parent5">
+    <p>A</p>
+    <P>B</P>
+    <P>C</P>
+    <P>D</P>
+    <P>E</P>
+  </div>
+
+  <div class="parent6">
+    <p>A</p>
+    <P>B</P>
+    <P>C</P>
+    <P>D</P>
+    <P>E</P>
+  </div>
+</body>
+</html>
