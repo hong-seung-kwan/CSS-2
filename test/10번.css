@@ -8,12 +8,15 @@ body{
   flex-direction: column;
   /* 높이는 고정값 */
   height: 1000px;
+  
 }
 /* header 스타일 */
 /* 로고와 메뉴를 수평으로 정렬 */
 /* 헤더를 상단에 고정 */
 header {
-  flex-grow: 2;
+  /* flex-grow: 2; */
+  height: 100px;
+  width: 100%;
   display: flex;
   background-color: #f6f5f0;
   padding-right: 10px;
@@ -23,8 +26,8 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
-  
 }
+/* header에 flex-grow랑 position을 같이 써서 찌그러짐 */
 /* 메뉴도 수평방향으로 정렬 */
 ul {
   display: flex;
@@ -58,6 +61,10 @@ main {
   display: flex;
   /* 주축을 기준으로 가운데 정렬 */
   justify-content: center;
+  /* header 높이 만큼 위쪽 여백 */
+  margin-top: 100px;
+  
+  
 }
 /* 이미지는 section에 있기 때문에 section에서 정렬 */
 section {
